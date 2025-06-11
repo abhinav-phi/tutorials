@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>images</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: #414141;
+        }
+    </style>
+
+
+    <!-- unslapsh
+    pexels
+    free image sources which doesnt need any copyright -->
+
+    <img src="https://images.pexels.com/photos/32116846/pexels-photo-32116846.jpeg" width="200px" alt="no image">
+    
+    <!-- shift+ alt+ down arrow
+     to duplicate the code -->
+
+     <!-- "./" means current folder
+      "../ means previous folder"
+
+      agr ek folder aage jana h toh uss folder ka naam likhdo-->
+
+    <img src="./random.jpg" width="200px" alt="no image">
+
+    <!-- image ke naam me spaces nhi honi nhi chahiye -->
+
+    <picture>
+        <source media="(min-width : 300px)" srcset="./random.jpg"/>
+        <source media="(min-width : 200px)" srcset="./random.jpg"/>
+        <img src="./random.jpg" alt="">
+
+    </picture>
+
+    <!-- using image map generator on google -->
+
+    <img src="random.jpg" usemap="#image-map">
+
+    <map name="image-map">
+    <area onclick="one()" target="" alt="" title="" href="" coords="3303,2306,2296,1271" shape="rect">
+    <area onclick="two()" target="" alt="" title="" href="" coords="3746,2703,5157,3423" shape="rect">
+    </map>
+
+    <script>
+        function one(){
+            alert("you clicked on one")
+        }
+        function two(){
+            alert("you clicked on two")
+        }
+    </script>
+
+    
+</body>
+</html>
