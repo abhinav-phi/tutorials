@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables</title>
+
+    <style>
+        body{
+            background-color: #414141;
+            color: white;
+        }
+    </style>
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            text-align: center;
+            color: #ffff;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        tr:nth-child(even){
+            background-color: #313131;
+
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 100%;"></table>
+
+   
+    <!-- tr = table rows
+     td = table data
+     th = table heading -->
+
+    <table>
+         <colgroup>
+            <col  span="2" style="background-color: darkred"/>
+         </colgroup>
+
+        <tr>
+            <th>country</th>
+            <th>country code</th>
+            <th> email</th>
+        </tr>
+        <tr>
+            <td>india</td>
+            <td>in</td>
+            <td>india@google.com</td>
+        </tr>
+        <tr>
+            <td>usa</td>
+            <td>us</td>
+            <td>usa@google.com</td>
+        </tr>
+        <tr>
+            <td>england</td>
+            <td>eng</td>
+            <td>eng@google.com</td>
+        </tr>
+        <tr>
+            <td>newzealand</td>
+            <td>nz</td>
+            <td>nz@google.com</td>
+        </tr>
+    </table>
+
+    <br />
+    <br />
+    <hr />
+    <br />
+    <br />
+
+    <table>
+
+        <!-- colspan ka matalab h vo kitne ki jagah lega -->
+        <tr>
+            <th colspan="2">country</th>
+            <td>india</td>
+            <td>china</td>
+        </tr>
+        <tr>
+            <th>code</th>
+            <td>in</td>
+            <td>cn</td>
+        </tr>
+    </table>
+
+    <br />
+    <br />
+    <hr />
+    <br />
+    <br />
+
+    <!-- 
+
+    thead : For table headers, Goes at the top, contains <tr> with <th>
+
+    th : table header ceell, bold + centered, use - thead, tbody, tfoot
+
+    tfoot :For table summary or totals,Goes logically last, but can appear before <tbody> in HTML ,contains <tr> with <td> or <th>
+
+    caption : to caption the table.. either above it or below it
+
+    -->
+
+    <!-- 
+    
+    caption : above = (this is default, for below we need to add some code)
+
+        <caption>
+              abcd
+        </caption>
+
+    -->
+
+    <!-- 
+    
+    caption :below =
+
+        <style>
+             caption {
+                  caption-side: bottom;
+                 }
+        </style>        
+    
+    -->
+
+
+    <table>
+        <style>
+            caption{
+                caption-side: bottom;
+            }
+        </style>
+
+        <caption>
+            this is below caption
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col"> items</th>
+                <th scope="col"> expenditure</th>
+            </tr>
+        </thead>     
+            <tbody>
+                <tr >
+                    <th scope="row">donuts</th>
+                    <td>10,000</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">stationary</th>
+                    <td>18,000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">total</th>
+                    <td>28,000</td>
+                </tr>
+            </tfoot>        
+    </table>
+    
+</body>
+</html>
