@@ -1,0 +1,78 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>this is class lecture</title>
+    </head>
+    <style>
+        /* .red ko #red se replace kroge toh kam nhi krega */
+        .red{ 
+            background-color: coral;
+        }
+
+        #green{
+            background-color: darkgreen;
+        }
+    </style>
+
+
+<body>
+    <p class="red">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, eaque.</p>
+
+    <p id="green">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, eaque.</p>
+
+    <h1 class="red">test 1</h1>
+    <h2 >test 2</h2>
+    <!-- <h2 id="green">test 2</h2> -->
+
+    <table>
+
+        <!-- colspan ka matalab h vo kitne ki jagah lega -->
+        <tr>
+            <th colspan="2">country</th>
+            <td>india</td>
+            <td>china</td>
+        </tr>
+        <tr>
+            <th>code</th>
+            <td>in</td>
+            <td>cn</td>
+            <td>
+                
+                <!-- copy the text by the source by clicking om embeded option -->
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/I7LrS1z_WNA?si=L3zI8ob5IBpcDVtO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+            </td>
+        </tr>
+    </table>
+
+    
+
+    <table>
+        <!-- <table style="width: 100%;"><table></table> -->
+        <tr>
+            <th> video title</th>
+            <td style="border: 10px;"> <strong>class ki video</strong> </td>
+            <td style="border: 10px;"> <strong>head ki video</strong> </td>
+        </tr>
+        <tr>
+                     <colgroup>
+            <col  span="3" style="background-color: darkred"/>
+         </colgroup>
+         <th>
+            direct link of the video
+         </th>
+
+            <td>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/I7LrS1z_WNA?si=L3zI8ob5IBpcDVtO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </td>
+            <td>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-wMbf3qVNsc?si=KLhFWtmlR5lEYAz3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
