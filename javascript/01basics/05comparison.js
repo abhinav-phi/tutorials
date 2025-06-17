@@ -21,6 +21,6 @@ console.log( undefined >= 0); // flase
 // ===
 
 console.log("2" === 2); // triple equalto me conversion nhi hoti
-// console.log("2" == 2); double equalto convert kr deta h string ko number, datatype change kr leta h
+console.log("2" == 2); //double equalto convert kr deta h string ko number, datatype change kr leta h
 //  == -> loose equality
 // === -> strict equality
